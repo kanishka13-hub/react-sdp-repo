@@ -2,12 +2,11 @@ import React from 'react';
 import { Link,Routes,Route } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
+import Registration from './Registration';
 import AdminLogin from './AdminLogin';
 import ManagerLogin from './ManagerLogin';
 import CustomerLogin from './CustomerLogin';
-
-
-
+import './style.css';
 
 const MainNavBar = () => {
   return (
@@ -16,7 +15,7 @@ const MainNavBar = () => {
       <div className="navbar-container">
         <div className="navbar-logo">
           <Link to="/" className="logo-link">
-            KL Event Management System -2500032054
+           KLEvent Management System - 2500031071
           </Link>
         </div>
         <ul className="nav-menu">
@@ -77,4 +76,3 @@ const MainNavBar = () => {
 };
 
 export default MainNavBar;
-
