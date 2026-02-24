@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import MainNavBar from './pages/MainNavBar';
 import AdminNavBar from './Admin/AdminNavBar';
-import ManagerNavBar from './manager/ManagerNavBar';
+import ManagerNavBar from "./Manager/ManagerNavBar";
 import CustomerNavBar from './customer/CustomerNavBar';
 
 
