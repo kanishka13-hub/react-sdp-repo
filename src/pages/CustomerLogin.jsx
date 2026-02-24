@@ -29,13 +29,16 @@ const CustomerLogin = () => {
     if (customer) 
     {
       sessionStorage.setItem('isCustomer', 'true');
+      // store whole customer record so the home page can display it
+      sessionStorage.setItem('currentCustomer', JSON.stringify(customer));
       alert(`Login successful! Welcome, ${customer.fullName}!`);
       console.log('Login successful:', customer);
       setFormData({
         username: '',
         password: '',
       });
-      navigate('/');
+      // send user straight to their dashboard
+      navigate('/customer/home');
       window.location.reload();
     } 
     else 
