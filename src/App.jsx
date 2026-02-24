@@ -25,7 +25,7 @@ function App() {
 
   return (
      <BrowserRouter>
-         {isAdmin && <AdminNavBar}
+         {isAdmin && <AdminNavBar/>}
          {isManager && <ManagerNavBar/>}
          {isCustomer && <CustomerNavBar/>}
          {!isAdmin && !isManager && !isCustomer && <MainNavBar/>}
